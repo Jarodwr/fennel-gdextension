@@ -1,0 +1,28 @@
+[submodule "godot-cpp"]
+	path = lib/godot-cpp
+	url = https://github.com/godotengine/godot-cpp.git
+	ignore = untracked
+[submodule "lua"]
+	path = lib/lua
+	url = https://github.com/lua/lua.git
+	ignore = untracked
+[submodule "sol2"]
+	path = lib/sol2
+	url = https://github.com/Assumeru/sol2.git
+	ignore = untracked
+[submodule "lib/luajit"]
+	path = lib/luajit
+	url = https://github.com/LuaJIT/LuaJIT.git
+	ignore = untracked
+[submodule "lib/tree-sitter"]
+	path = lib/tree-sitter
+	url = https://github.com/tree-sitter/tree-sitter.git
+	ignore = untracked
+[submodule "lib/tree-sitter-lua"]
+	path = lib/tree-sitter-lua
+	url = https://github.com/tree-sitter-grammars/tree-sitter-lua.git
+	ignore = untracked
+[submodule "lib/fennel-tools"]
+	path = lib/fennel-tools
+	url = https://github.com/mosaic-gamedev/fennel-tools
+	ignore = untracked

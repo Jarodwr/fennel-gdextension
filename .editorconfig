@@ -1,0 +1,35 @@
+root = true
+
+[*]
+encoding = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+
+[*.{c,cpp,h,hpp,gd,lua}]
+indent_style = tab
+indent_size = 4
+
+[*.py]
+indent_style = space
+indent_size = 4
+
+[SConstruct]
+indent_style = space
+indent_size = 4
+
+[Makefile]
+indent_style = tab
+indent_size = 8
+
+[doc_classes/*.xml]
+indent_style = tab
+indent_size = 4
+
+[*.bat]
+end_of_line = crlf
+
+[.luarc.json]
+indent_style = space
+indent_size = 4

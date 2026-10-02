@@ -1,0 +1,24 @@
+[tools]
+lua = "5.4"       # build fennel.lua from source (make -C vendor/fennel fennel.lua)
+python = "3"      # code generation scripts
+pipx = "latest"   # backend for installing scons below
+"pipx:scons" = "latest"  # gdextension build system
+
+[env]
+PYTHON_BIN = "python3"
+
+[tasks.build-lua]
+description = "Build the gdextension with the Lua 5.4 runtime"
+run = "scons lua_runtime=lua \"$@\""
+
+[tasks.build-luajit]
+description = "Build the gdextension with the LuaJIT runtime"
+run = "scons lua_runtime=luajit \"$@\""
+
+[tasks.build]
+description = "Build both the Lua and LuaJIT gdextension variants"
+depends = ["build-lua", "build-luajit"]
+
+[tasks.clean]
+description = "Remove build artifacts"
+run = "scons -c && rm -rf build"
